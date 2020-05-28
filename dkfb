@@ -83,7 +83,7 @@ def loginSC():
 	print"\033[1;97mSilahkan login SC nya dulu bosque\n"
 	username = raw_input("\033[1;96m[*] \033[1;97mUsername \033[1;91m: \033[1;92m")
 	password = raw_input("\033[1;96m[*] \033[1;97mPassword \033[1;91m: \033[1;92m")
-	if username =="MR" and password =="irwan":
+	if username =="BOS" and password =="irwan":
 		print"\033[1;96m[✓] \033[1;92mLogin success"
 		time.sleep(1)
 		login()
@@ -241,7 +241,7 @@ def pilih_super():
 		print 42*"\033[1;96m="
 		jalan('\033[1;96m[✺] \033[1;93mMengambil ID \033[1;97m...')
 		r = requests.get("https://graph.facebook.com/me/friends?access_token="+toket)
-		z = json.loads(r.text)
+		z = json.loads(r.text) 
 		for s in z['data']:
 			id.append(s['id'])
 	elif peak =="2":
